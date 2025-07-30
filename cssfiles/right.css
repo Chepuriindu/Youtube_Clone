@@ -1,0 +1,50 @@
+.save,
+.app,
+.notifications,
+.channel-pic{
+    height: 40px;
+}
+      
+
+.search,
+.voice,
+.upload,
+.app,
+.notifications-icon 
+.channel{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search .tool,
+.voice .tool,
+.upload .tool,
+.app .tool,
+.notifications-icon .tool,
+.channel .tool{
+    position: absolute;
+    background-color: gray;
+    color:white;
+    padding-left: 8px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    padding-top: 5px; 
+    border-radius: 2px; 
+    font-size: 13px;
+    bottom: -20px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+} 
+
+.search:hover .tool ,
+.voice:hover .tool,
+.upload:hover .tool,
+.app:hover .tool,
+.notifications-icon:hover .tool,
+.channel:hover .tool{
+    opacity: 1;
+}
